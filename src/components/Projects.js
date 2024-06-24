@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-4">
                 <div className="card">
-                  <a className="img-card" href="#">
+                  <a className="img-card" href="https://github.com/Laban254/WebScrapify">
                     <img src={Webscrapify} alt="WebScrapify" />
                   </a>
                   <div className="card-content">
@@ -33,7 +33,7 @@ const Projects = () => {
               </div>
               <div className="col-xs-12 col-sm-6 col-md-4">
                 <div className="card">
-                  <a className="img-card">
+                  <a className="img-card" href="https://github.com/Laban254/TicketingSystem">
                     <img src={Ticketing} alt="ticketingSystem" />
                   </a>
                   <div className="card-content">
@@ -53,7 +53,7 @@ const Projects = () => {
               </div>
               <div className="col-xs-12 col-sm-6 col-md-4">
                 <div className="card">
-                  <a className="img-card" href="#">
+                  <a className="img-card" href="https://github.com/Laban254/StudyHub">
                     <img src={Studyhub} alt="StudyHub" />
                   </a>
                   <div className="card-content">
