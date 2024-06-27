@@ -5,7 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #031926; /* Default background color */
+  color: #e7e7e7; /* Default text color */
 }
+
+body.dark-mode {
+  background-color: #000000; /* Dark mode background color */
+  color: #ffffff; /* Dark mode text color */
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

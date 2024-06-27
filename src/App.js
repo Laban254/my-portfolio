@@ -1,4 +1,5 @@
 // App.js
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -8,29 +9,29 @@ import Skillsets from './components/Skillsets';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
-
-function App() {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem('darkMode') === 'true' ? true : false
-  );
-  const [activeCategory, setActiveCategory] = useState('about');
-
-  useEffect(() => {
-    localStorage.setItem('darkMode', darkMode);
-  }, [darkMode]);
+function App({ darkMode, toggleDarkMode }) {
+  const [activeCategory, setActiveCategory] = useState('about'); // Initialize activeCategory state
 
   const handleCategoryChange = (category) => {
-    setActiveCategory(category);
+    setActiveCategory(category); // Update activeCategory state with the selected category
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  useEffect(() => {
+    // Update the body class based on darkMode state
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
 
   return (
-    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+    <div>
       <Header />
-      <Navigation activeCategory={activeCategory} onCategoryChange={handleCategoryChange} />
+      <Navigation
+        activeCategory={activeCategory}
+        onCategoryChange={handleCategoryChange}
+      />
       <main className="container mt-4">
         {activeCategory === 'about' && <AboutMe />}
         {activeCategory === 'skillsets' && <Skillsets />}

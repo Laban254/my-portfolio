@@ -1,19 +1,24 @@
 /* App.css */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-/* Additional custom styles */
-
-
-
-.dark-mode {
-  background-color: #000000;
-  color: #fff; /* Light text color */
+:root {
+  --background-light: #f0f0f0;
+  --text-dark: #333333;
+  --accent-color-light: #007bff;
+  
+  --background-dark: #031926;
+  --text-light: #ffffff;
+  --accent-color-dark: #4e6bff;
 }
 
-.footer.dark-mode {
-  background-color: #000000;
-  color: #fff; /* Light footer text color */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
 
 .light-bulb {
   width: 40px;
