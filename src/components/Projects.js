@@ -6,7 +6,7 @@ import Studyhub from "../assets/studyapp.png"
 
 const Projects = () => {
   return (
-    <section className="wrapper">
+    <section className="wrapper mb-50px">
       <div className="container-fostrap">
         <div className="content">
           <div className="container">

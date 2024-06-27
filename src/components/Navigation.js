@@ -33,6 +33,7 @@ const Navigation = ({ activeCategory, onCategoryChange }) => {
           />
         ))}
       </ul>
+      <hr></hr>
     </nav>
   );
 };

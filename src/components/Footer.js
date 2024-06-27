@@ -10,7 +10,7 @@ const Footer = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <footer className={`footer fixed-bottom py-3 ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
+    <footer className={`footer fixed-bottom py-3 ${darkMode ? 'bg-black text-light' : 'bg-black text-dark'}`}>
       <div className="container d-flex justify-content-between align-items-center">
         {/* Email icon */}
         <a href="mailto:labanrotich6544@gmail.com" className="text-decoration-none mx-3">
