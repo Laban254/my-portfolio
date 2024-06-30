@@ -45,7 +45,7 @@ const Projects = () => {
                     <a href="https://github.com/Laban254/TicketingSystem" className="btn btn-primary btn-block">
                     <i class="fab fa-github"></i>  GitHub Link
                     </a>
-                    <a href="https://ticketingsystem-hp75.onrender.com/" className="btn btn-secondary btn-block">
+                    <a href="https://ticketingsystem-p5ew.onrender.com/" className="btn btn-secondary btn-block">
                     <i class="fas fa-external-link-alt"></i> Live Link
                     </a>
                   </div>
@@ -65,7 +65,7 @@ const Projects = () => {
                     <a href="https://github.com/Laban254/StudyHub" className="btn btn-primary btn-block">
                     <i class="fab fa-github"></i> GitHub Link
                     </a>
-                    <a href="https://studyhub-8yqw.onrender.com/" className="btn btn-secondary btn-block">
+                    <a href="https://studyhub-irj2.onrender.com/" className="btn btn-secondary btn-block">
                     <i class="fas fa-external-link-alt"></i> Live Link
                     </a>
                   </div>
