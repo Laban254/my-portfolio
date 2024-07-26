@@ -125,8 +125,6 @@
 /* skillset */
 
 
-
-
 .row-eq-height {
   display: flex;
   flex-wrap: wrap;
@@ -167,3 +165,5 @@
   background: rgba(0, 0, 0, 0.1);
   color: #0a0202;
 }
+
+
