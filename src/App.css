@@ -122,3 +122,48 @@
   color: #333; /* Light mode text color */
 }
 
+/* skillset */
+
+
+
+
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  flex: 1;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.bg-gradient-info {
+  background: linear-gradient(45deg, #17a2b8, #138496);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(45deg, #ffc107, #e0a800);
+}
+
+.list-group-item {
+  transition: background 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0202;
+}

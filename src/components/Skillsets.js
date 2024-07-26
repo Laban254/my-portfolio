@@ -1,79 +1,96 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Skillsets = () => {
   return (
-    <section id="skills" className="py-5 ">
-      <div className="container ">
-        
-        {/* Backend Development */}
-        <div className="mb-4">
-          <h3 className="text-white">Backend Development</h3>
-          <div className="text-center">
-            <span className="badge bg-success me-2 mb-2">Python</span>
-            <span className="badge bg-success me-2 mb-2">JavaScript</span>
-            <span className="badge bg-success me-2 mb-2">Django</span>
-            <span className="badge bg-success me-2 mb-2">Django REST Framework</span>
-            <span className="badge bg-success me-2 mb-2">Flask</span>
-            <span className="badge bg-success me-2 mb-2">Node-Js</span>
-            <span className="badge bg-success me-2 mb-2">FastAPI</span>
+    <section id="skills" className="d-flex align-items-center">
+      <div className="container">
+        <div className="row row-eq-height">
+          {/* Backend Development */}
+          <div className="col-md-6 mb-4 d-flex align-items-stretch">
+            <div className="card skill-card">
+              <div className="card-header bg-gradient-success text-white">Backend Development</div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Languages:</strong>
+                  <span>Python, JavaScript</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Frameworks:</strong>
+                  <span>Django, Express.js, FastAPI</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Databases:</strong>
+                  <span>MySQL, PostgreSQL, MongoDB, Redis</span>
+                </li>
+                {/* <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>DevOps Tools:</strong>
+                  <span>Docker, AWS, Nginx, Gunicorn</span>
+                </li> */}
+              </ul>
+            </div>
           </div>
 
-          <div className="text-center">
-          <span className="badge bg-success me-2 mb-2">MySQL</span>
-          <span className="badge bg-success me-2 mb-2">PostgreSQL</span>
-            <span className="badge bg-success me-2 mb-2">MongoDB</span>
-            <span className="badge bg-success me-2 mb-2">Redis</span>
+          {/* Frontend Development */}
+          <div className="col-md-6 mb-4 d-flex align-items-stretch">
+            <div className="card skill-card">
+              <div className="card-header bg-gradient-info text-white">Frontend Development</div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Languages:</strong>
+                  <span>HTML5, CSS3, JavaScript</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Libraries/Frameworks:</strong>
+                  <span>Bootstrap, React</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Design Tools:</strong>
+                  <span>Figma</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="text-center">
-          <span className="badge bg-success me-2 mb-2">Docker</span>
-            <span className="badge bg-success me-2 mb-2">AWS</span>
-            <span className="badge bg-success me-2 mb-2">Nginx</span>
-            <span className="badge bg-success me-2 mb-2">Gunicorn</span>
+          {/* Version Control & Collaboration Tools */}
+          <div className="col-md-6 mb-4 d-flex align-items-stretch">
+            <div className="card skill-card">
+              <div className="card-header bg-gradient-primary text-white">Version Control & Collaboration Tools</div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Version Control:</strong>
+                  <span>Git</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Project Management & Collaboration:</strong>
+                  <span>Agile, Trello</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
+          {/* Additional Technical Skills */}
+          <div className="col-md-6 mb-4 d-flex align-items-stretch">
+            <div className="card skill-card">
+              <div className="card-header bg-gradient-warning text-white">Additional Technical Skills</div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Containerization:</strong>
+                  <span>Docker</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Cloud Services and Infrastructure:</strong>
+                  <span>AWS, Azure</span>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <strong>Web Servers and Deployment:</strong>
+                  <span>Nginx, Gunicorn, Uvicorn</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <hr></hr>
-        {/* Frontend Development */}
-        <div className="mb-4">
-          <h3 className="text-white">Frontend Development</h3>
-          <div className="text-center">
-            <span className="badge bg-info  me-2 mb-2">HTML5</span>
-            <span className="badge bg-info me-2 mb-2">CSS3</span>
-            <span className="badge bg-info  me-2 mb-2">JavaScript</span>
-            <span className="badge bg-info  me-2 mb-2">Bootstrap</span>
-            <span className="badge bg-info  me-2 mb-2">React</span>
-          </div>
-
-          <div className="text-center">
-            <span className="badge bg-info  me-2 mb-2">Figma</span>
-          </div>
-
-        </div>
-        <hr></hr>
-        {/* Version Control & Collaboration */}
-        <div className="mb-4">
-          <h3 className="text-white">Version Control & Soft Skills</h3>
-          <div className="text-center">
-            <span className="badge bg-primary me-2 mb-2">Communication</span>
-            <span className="badge bg-primary me-2 mb-2">Project Management</span>
-            <span className="badge bg-primary me-2 mb-2">Leadership</span>
-            <span className="badge bg-primary me-2 mb-2">Adaptability</span>
-            <span className="badge bg-primary me-2 mb-2">Collaboration</span>
-            <span className="badge bg-primary me-2 mb-2">Creativity</span>
-          </div>
-        </div>
-
-        <div className="text-center">
-            <span className="badge bg-primary me-2 mb-2">Git</span>
-            <span className="badge bg-primary me-2 mb-2">Agile</span>
-            <span className="badge bg-primary me-2 mb-2">Trello</span>
-          </div>
-
       </div>
-      <hr></hr>
     </section>
   );
 };
