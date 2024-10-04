@@ -1,93 +1,129 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Skillsets = () => {
   return (
     <section id="skills" className="d-flex align-items-center">
       <div className="container">
-        <div className="row row-eq-height">
-          {/* Backend Development */}
-          <div className="col-md-6 mb-4 d-flex align-items-stretch">
-            <div className="card skill-card">
-              <div className="card-header bg-gradient-success text-white">Backend Development</div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Languages:</strong>
-                  <span>Python, JavaScript</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Frameworks:</strong>
-                  <span>Django, Express.js, FastAPI</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Databases:</strong>
-                  <span>MySQL, PostgreSQL, MongoDB, Redis</span>
-                </li>
-                {/* <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>DevOps Tools:</strong>
-                  <span>Docker, AWS, Nginx, Gunicorn</span>
-                </li> */}
-              </ul>
-            </div>
+        <h2 className="text-center mb-4">Skills</h2>
+        <div className="row text-center">
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-python fa-3x" style={{ color: '#FFD43B' }}></i>
+            <p>Python</p>
           </div>
-
-          {/* Frontend Development */}
-          <div className="col-md-6 mb-4 d-flex align-items-stretch">
-            <div className="card skill-card">
-              <div className="card-header bg-gradient-info text-white">Frontend Development</div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Languages:</strong>
-                  <span>HTML5, CSS3, JavaScript</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Libraries/Frameworks:</strong>
-                  <span>Bootstrap, React</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Design Tools:</strong>
-                  <span>Figma</span>
-                </li>
-              </ul>
-            </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-python fa-3x" style={{ color: '#092E20' }}></i>
+            <p>Django</p>
           </div>
-
-          {/* Version Control & Collaboration Tools */}
-          <div className="col-md-6 mb-4 d-flex align-items-stretch">
-            <div className="card skill-card">
-              <div className="card-header bg-gradient-primary text-white">Version Control & Collaboration Tools</div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Version Control:</strong>
-                  <span>Git</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Project Management & Collaboration:</strong>
-                  <span>Agile, Trello</span>
-                </li>
-              </ul>
-            </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-js-square fa-3x" style={{ color: '#F7DF1E' }}></i>
+            <p>JavaScript</p>
           </div>
-
-          {/* Additional Technical Skills */}
-          <div className="col-md-6 mb-4 d-flex align-items-stretch">
-            <div className="card skill-card">
-              <div className="card-header bg-gradient-warning text-white">Additional Technical Skills</div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Containerization:</strong>
-                  <span>Docker</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Cloud Services and Infrastructure:</strong>
-                  <span>AWS, Azure</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-center">
-                  <strong>Web Servers and Deployment:</strong>
-                  <span>Nginx, Gunicorn, Uvicorn</span>
-                </li>
-              </ul>
-            </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-database fa-3x" style={{ color: '#336791' }}></i>
+            <p>PostgreSQL</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-database fa-3x" style={{ color: '#F29111' }}></i>
+            <p>MySQL</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-database fa-3x" style={{ color: '#47A248' }}></i>
+            <p>MongoDB</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-recycle fa-3x" style={{ color: '#D52B1E' }}></i>
+            <p>Redis</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-react fa-3x" style={{ color: '#61DAFB' }}></i>
+            <p>React</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-bootstrap fa-3x" style={{ color: '#7952B3' }}></i>
+            <p>Bootstrap</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-pencil-ruler fa-3x" style={{ color: '#F24E1E' }}></i>
+            <p>Figma</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-git-alt fa-3x" style={{ color: '#F1502F' }}></i>
+            <p>Git</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-github fa-3x" style={{ color: '#181717' }}></i>
+            <p>GitHub Actions</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-aws fa-3x" style={{ color: '#FF9900' }}></i>
+            <p>AWS / Heroku</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-docker fa-3x" style={{ color: '#2496ED' }}></i>
+            <p>Docker</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-server fa-3x" style={{ color: '#009639' }}></i>
+            <p>Nginx</p>
+          </div>
+         
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-shield-alt fa-3x" style={{ color: '#5A5A5A' }}></i>
+            <p>API Security</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-file-alt fa-3x" style={{ color: '#4C4C4C' }}></i>
+            <p>Technical Writing</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-flask fa-3x" style={{ color: '#BF3E3E' }}></i>
+            <p>Flask</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-cogs fa-3x" style={{ color: '#FF5722' }}></i>
+            <p>Ansible</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-code-branch fa-3x" style={{ color: '#673AB7' }}></i>
+            <p>Django REST Framework</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-server fa-3x" style={{ color: '#009639' }}></i>
+            <p>FastAPI</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-rocket fa-3x" style={{ color: '#FF9800' }}></i>
+            <p>CI/CD</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-terminal fa-3x" style={{ color: '#00BFFF' }}></i>
+            <p>Shell</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-chart-line fa-3x" style={{ color: '#4CAF50' }}></i>
+            <p>Linear</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-trello fa-3x" style={{ color: '#0079BF' }}></i>
+            <p>Trello</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-bell fa-3x" style={{ color: '#F44336' }}></i>
+            <p>Celery</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-comments fa-3x" style={{ color: '#00C853' }}></i>
+            <p>Swagger/OpenAI</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-google fa-3x" style={{ color: '#4285F4' }}></i>
+            <p>Google Cloud</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fab fa-microsoft fa-3x" style={{ color: '#0078D4' }}></i>
+            <p>Azure</p>
           </div>
         </div>
       </div>
@@ -95,4 +131,4 @@ const Skillsets = () => {
   );
 };
 
-export default Skillsets;
+export default Skillsets

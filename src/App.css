@@ -79,122 +79,89 @@
   color: #0a0202;
 }
 
+
+
+
+
 /* projects */
+/* projects.css */
 .projects-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 8px; /* Rounded corners for container */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around container */
+  margin-bottom: 80px;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem; /* Adjusted font size */
-  margin-bottom: 30px; /* Adjusted margin */
-  color: #333;
-  font-weight: 600;
+  font-size: 2.5rem; /* Larger font size */
+  color: #2c3e50; /* Dark blue-grey color */
+  margin-bottom: 40px; /* Space below heading */
+  font-weight: 700; /* Bold font */
+  letter-spacing: 1px; /* Increase spacing between letters */
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted min width */
-  gap: 15px; /* Reduced gap between cards */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted min width */
+  gap: 20px; /* Increase gap for better spacing */
 }
 
 .project-card {
-  background-color: #ffffff;
-  border-radius: 10px; /* Slightly smaller border radius */
-  padding: 15px; /* Reduced padding */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adjusted transition duration */
+  background-color:#FEFEFA; /* White background for cards 91a798  */
+  border-radius: 10px; /* Rounded corners for cards */
+  padding: 20px; /* Padding for card content */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for cards */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition effects */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Allow flexibility for content */
+  justify-content: space-between; /* Space out footer */
   overflow: hidden; /* Hide any overflow content */
-  position: relative;
 }
 
 .project-card:hover {
-  transform: translateY(-4px); /* Slightly reduced hover effect */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow */
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
 }
 
 .project-title a {
-  font-size: 1.25rem; /* Reduced font size */
-  color: #0366d6;
-  text-decoration: none;
-  margin-bottom: 8px; /* Reduced margin */
-  position: relative;
+  font-size: 1.45rem; /* Font size for project title */
+  color: #2A52BE; /* Link color */
+  text-decoration: none; /* No underline */
 }
 
 .project-title a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
 }
 
 .project-description {
-  font-size: 0.9rem; /* Reduced font size */
-  color: #444;
-  margin: 5px 0; /* Reduced margin */
-  flex-grow: 1; /* Allows description to take available space */
-  overflow-wrap: break-word; /* Prevents overflow */
+  font-size: 1rem; /* Standard font size */
+  color: #444; /* Darker text color */
+  margin: 10px 0; /* Space around description */
+  overflow-wrap: break-word; /* Prevent overflow */
+  flex-grow: 1; /* Allow description to grow */
 }
 
 .project-footer {
-  margin-top: 10px; /* Increased margin for better spacing */
-  font-size: 0.8rem; /* Reduced font size */
-  color: #555;
-  display: flex;
-  flex-direction: column;
+  font-size: 0.9rem; /* Slightly smaller font for footer */
+  color: #555; /* Gray color for footer */
+  margin-top: 10px; /* Margin for spacing */
 }
 
 .project-footer strong {
-  color: #333;
+  color: #333; /* Darker color for strong text */
 }
 
 .project-language,
 .project-topics {
-  margin-top: 4px; /* Reduced margin */
-  display: block;
+  margin-top: 4px; /* Margin for footer items */
 }
 
-.project-topics {
-  background-color: #f1f1f1; 
-  border-radius: 4px;
-  padding: 4px 8px; /* Reduced padding */
-  display: inline-block; 
-  font-weight: 400; 
-  margin-top: 8px; /* Added margin for spacing */
-}
 
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 54, 86, 0.05);
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.2s ease; /* Adjusted transition duration */
-}
 
-.project-card:hover::before {
-  opacity: 1;
-}
 
-h1 {
-  text-align: center;          /* Center-align the heading */
-  font-size: 2.5rem;           /* Increase the font size */
-  color: #2c3e50;              /* Dark blue-grey color for a professional look */
-  margin-bottom: 40px;         /* Add space below the heading */
-  font-weight: 700;            /* Bold font */
-  letter-spacing: 1px;         /* Slightly increase spacing between letters */
-  text-transform: uppercase;   /* Make the text uppercase for a bold statement */
-  background: linear-gradient(90deg, #0366d6, #00c6ff); /* Add gradient color */
-  -webkit-background-clip: text;   /* Clip the background to the text */
-  color: transparent;          /* Make the text color transparent so gradient shows */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
-}
 
 
 /* nav */

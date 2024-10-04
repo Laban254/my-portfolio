@@ -35,8 +35,8 @@ const Projects = () => {
   }, [specificRepos]); // Add specificRepos as a dependency
 
   return (
-    <div className="projects-container" style={{ paddingBottom: '100px' }}>
-      <h1>My GitHub Projects</h1>
+    <div className="projects-container">
+      <h1>Projects</h1>
       <div className="projects-grid">
         {repos.map((repo) => (
           <div key={repo.id} className="project-card">
