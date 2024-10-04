@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from './components/Header';
 import Navigation from './components/Navigation';
 import AboutMe from './components/AboutMe';
 import Skillsets from './components/Skillsets';
@@ -27,7 +26,6 @@ function App({ darkMode, toggleDarkMode }) {
 
   return (
     <div>
-      {/* <Header /> */}
       <Navigation
         activeCategory={activeCategory}
         onCategoryChange={handleCategoryChange}
