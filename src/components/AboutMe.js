@@ -10,8 +10,7 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="container my-5">
-     
+    <div className="container my-5" style={{ marginBottom: '50px' }}> 
       <div className="text-center mb-4">
         <i className="fas fa-user fa-6x" style={{ color: '#f9ba32' }}></i>
       </div>

@@ -4,8 +4,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Skillsets = () => {
   return (
-    <section id="skills" className="d-flex align-items-center">
-      <div className="container">
+    <section id="skills" className="d-flex align-items-center" style={{ marginBottom: '40px' }}>
+      <div className="skillsets-container">
         <h2 className="text-center mb-4">Skills</h2>
         <div className="row text-center">
           <div className="col-md-2 mb-4">
