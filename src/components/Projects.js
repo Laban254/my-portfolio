@@ -7,8 +7,8 @@ const Projects = () => {
   const specificRepos = [
     "Event-management-API", "StudyHub", "postgres_db_tool", "customer-management-api",
     "ExpressJs-RESTFUL--API_demo", "simple-CI-system", "WebScrapify", "django-rabbitmq-celery-smtp",
-    "WeatherSnap",  "user-management-automation-script",
-    "TicketingSystem", "ImageGen-OpenAI",  "FileEncryptAndDecrypt"
+    "WeatherSnap", "user-management-automation-script",
+    "TicketingSystem", "ImageGen-OpenAI", "FileEncryptAndDecrypt"
   ];
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Projects = () => {
     };
 
     fetchRepos();
-  }, []);
+  }, [specificRepos]); // Add specificRepos as a dependency
 
   return (
     <div className="projects-container" style={{ paddingBottom: '100px' }}>
@@ -41,7 +41,6 @@ const Projects = () => {
         {repos.map((repo) => (
           <div key={repo.id} className="project-card">
             <h2 className="project-title">
-              {/* Ensure the target="_blank" and rel="noopener noreferrer" are set */}
               <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                 {repo.name}
               </a>
