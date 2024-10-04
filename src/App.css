@@ -24,93 +24,6 @@
   color: white;
 }
 
-/* Projects */
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-}
-
-.card {
-  
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Ensures cards stretch to full height */
-}
-
-
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adjust shadow on hover */
-}
-
-.img-card {
-  display: block;
-  overflow: hidden;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.img-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  transition: all 0.25s ease;
-}
-
-.card-body {
-  flex: 1; 
-  padding: 15px;
-  overflow: hidden; 
-  background-color: #2E4F4F;
-}
-
-.card-body h5 {
-  color: #FFFFFF; 
-}
-
-.card-body p {
-  margin-bottom: 0; 
-  overflow-y: auto; 
-  max-height: 200px; 
-  color: #ddd; 
-}
-
-.card-footer {
-  background-color: #2E4F4F;
-  text-align: center;
-  padding: 20px;
-  
-  
-}
-
-.card-footer a {
-  display: inline-block;
-  margin: 5px;
-  padding: 8px 20px;
-  text-decoration: none;
-  color: #333; /* Text color */
-  background-color: #f0f0f0; /* Button background color */
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.card-footer a:hover {
-  background-color: #e0e0e0; /* Button hover background color */
-}
-
-.card-footer a i {
-  margin-right: 8px;
-}
 
 
 .footer {
@@ -166,4 +79,162 @@
   color: #0a0202;
 }
 
+/* projects */
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+h1 {
+  text-align: center;
+  font-size: 2rem; /* Adjusted font size */
+  margin-bottom: 30px; /* Adjusted margin */
+  color: #333;
+  font-weight: 600;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted min width */
+  gap: 15px; /* Reduced gap between cards */
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px; /* Slightly smaller border radius */
+  padding: 15px; /* Reduced padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adjusted transition duration */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Allow flexibility for content */
+  overflow: hidden; /* Hide any overflow content */
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-4px); /* Slightly reduced hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow */
+}
+
+.project-title a {
+  font-size: 1.25rem; /* Reduced font size */
+  color: #0366d6;
+  text-decoration: none;
+  margin-bottom: 8px; /* Reduced margin */
+  position: relative;
+}
+
+.project-title a:hover {
+  text-decoration: underline;
+}
+
+.project-description {
+  font-size: 0.9rem; /* Reduced font size */
+  color: #444;
+  margin: 5px 0; /* Reduced margin */
+  flex-grow: 1; /* Allows description to take available space */
+  overflow-wrap: break-word; /* Prevents overflow */
+}
+
+.project-footer {
+  margin-top: 10px; /* Increased margin for better spacing */
+  font-size: 0.8rem; /* Reduced font size */
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-footer strong {
+  color: #333;
+}
+
+.project-language,
+.project-topics {
+  margin-top: 4px; /* Reduced margin */
+  display: block;
+}
+
+.project-topics {
+  background-color: #f1f1f1; 
+  border-radius: 4px;
+  padding: 4px 8px; /* Reduced padding */
+  display: inline-block; 
+  font-weight: 400; 
+  margin-top: 8px; /* Added margin for spacing */
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 54, 86, 0.05);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease; /* Adjusted transition duration */
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;          /* Center-align the heading */
+  font-size: 2.5rem;           /* Increase the font size */
+  color: #2c3e50;              /* Dark blue-grey color for a professional look */
+  margin-bottom: 40px;         /* Add space below the heading */
+  font-weight: 700;            /* Bold font */
+  letter-spacing: 1px;         /* Slightly increase spacing between letters */
+  text-transform: uppercase;   /* Make the text uppercase for a bold statement */
+  background: linear-gradient(90deg, #0366d6, #00c6ff); /* Add gradient color */
+  -webkit-background-clip: text;   /* Clip the background to the text */
+  color: transparent;          /* Make the text color transparent so gradient shows */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
+}
+
+
+/* nav */
+.navigation {
+  
+  padding: 1rem; /* Padding around the nav */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.name-container .name {
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 1rem; /* Space below the name */
+}
+
+.nav-item {
+  margin: 0 10px; /* Space between nav items */
+}
+
+.nav-link {
+  display: flex; /* Flex display for icon and text */
+  align-items: center; /* Center icon and text vertically */
+  color: #007bff; /* Primary link color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded button */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  color: #0056b3; /* Darker color on hover */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Active link background */
+  color: white; /* Active link text color */
+}
+
+.nav-icon {
+  margin-right: 8px; /* Space between icon and text */
+}

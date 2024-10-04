@@ -27,7 +27,7 @@ function App({ darkMode, toggleDarkMode }) {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Navigation
         activeCategory={activeCategory}
         onCategoryChange={handleCategoryChange}
