@@ -102,7 +102,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #61876E; /* Soft background for the container  2C3639*/
+  background-color: #3F4E4F; /* Soft background for the container  2C3639*/
   border-radius: 12px;
 }
 
@@ -125,7 +125,7 @@ h1 {
 
 /* Card Styling */
 .project-card {
-  background-color: #A6BB8D; /* Soft white for the card background   3F4E4F*/ 
+  background-color: #F8F5F1; /* Soft white for the card background   3F4E4F*/ 
 
   border-radius: 8px;
   padding: 20px;
