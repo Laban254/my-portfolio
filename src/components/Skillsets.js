@@ -46,7 +46,7 @@ const Skillsets = () => {
             <p>FastAPI</p>
           </div>
           <div className="col-md-2 mb-4">
-            <i className="fas fa-cogs fa-3x" style={{ color: '#F15A29' }}></i> {/* Placeholder for Gin */}
+            <i className="fas fa-cogs fa-3x" style={{ color: '#F15A29' }}></i> 
             <p>Gin</p>
           </div>
 
@@ -140,13 +140,12 @@ const Skillsets = () => {
             <p>Swagger/OpenAI</p>
           </div>
           
-          {/* Add RabbitMQ and Kafka */}
           <div className="col-md-2 mb-4">
-            <i className="fas fa-rabbit fa-3x" style={{ color: '#4A8C2A' }}></i> {/* Icon for RabbitMQ */}
+            <i className="fas fa-rabbit fa-3x" style={{ color: '#4A8C2A' }}></i> 
             <p>RabbitMQ</p>
           </div>
           <div className="col-md-2 mb-4">
-            <i className="fas fa-stream fa-3x" style={{ color: '#E87E04' }}></i> {/* Icon for Kafka */}
+            <i className="fas fa-stream fa-3x" style={{ color: '#E87E04' }}></i> 
             <p>Kafka</p>
           </div>
         </div>

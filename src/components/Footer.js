@@ -6,14 +6,13 @@ import LightBulb from '../assets/idea.png';
 
 const Footer = ({ darkMode, toggleDarkMode }) => {
   const handleBulbClick = () => {
-    toggleDarkMode(!darkMode); // Toggle dark mode state
+    toggleDarkMode(!darkMode);
   };
   <hr></hr>
   return (
     <footer className={`footer fixed-bottom py-3 `}>
       <div className="container d-flex justify-content-between align-items-center">
-       
-        {/* GitHub icon */}
+ 
         <a
           href="https://github.com/Laban254"
           target="_blank"
@@ -23,13 +22,10 @@ const Footer = ({ darkMode, toggleDarkMode }) => {
           <FaGithub size={28} />
         </a>
 
-         {/* Email icon */}
          <a href="mailto:labanrotich6544@gmail.com" className="text-decoration-none mx-3">
           <FaEnvelope size={28} />
         </a>
 
-
-        {/* Animated light bulb */}
         <img
           src={LightBulb}
           alt="Light Bulb"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUser, FaTools, FaProjectDiagram, FaBlog } from 'react-icons/fa'; // Importing icons
+import { FaUser, FaTools, FaProjectDiagram, FaBlog } from 'react-icons/fa';
 
 const NavItem = ({ label, active, onClick, href, icon }) => {
   return (
@@ -33,7 +33,7 @@ const Navigation = ({ activeCategory, onCategoryChange }) => {
     { label: 'About Me', key: 'about', icon: <FaUser /> },
     { label: 'Skillsets', key: 'skillsets', icon: <FaTools /> },
     { label: 'Projects', key: 'projects', icon: <FaProjectDiagram /> },
-    { label: 'Blog', href: 'https://kibetlaban.me/', icon: <FaBlog /> } // Blog tab
+    { label: 'Blog', href: 'https://kibetlaban.me/', icon: <FaBlog /> } 
   ];
 
   return (
@@ -44,12 +44,12 @@ const Navigation = ({ activeCategory, onCategoryChange }) => {
       <ul className="nav nav-pills justify-content-end">
         {navItems.map(item => (
           <NavItem
-            key={item.key || item.label} // Use key or label for uniqueness
+            key={item.key || item.label} 
             label={item.label}
             active={activeCategory === item.key}
             onClick={() => onCategoryChange(item.key)}
-            href={item.href} // Pass href to NavItem
-            icon={item.icon} // Pass icon to NavItem
+            href={item.href}
+            icon={item.icon} 
           />
         ))}
       </ul>

@@ -9,14 +9,13 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 function App({ darkMode, toggleDarkMode }) {
-  const [activeCategory, setActiveCategory] = useState('about'); // Initialize activeCategory state
+  const [activeCategory, setActiveCategory] = useState('about');
 
   const handleCategoryChange = (category) => {
-    setActiveCategory(category); // Update activeCategory state with the selected category
+    setActiveCategory(category); 
   };
 
   useEffect(() => {
-    // Update the body class based on darkMode state
     if (darkMode) {
       document.body.classList.add('dark-mode');
     } else {

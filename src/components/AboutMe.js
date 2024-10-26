@@ -7,16 +7,16 @@ const AboutMe = () => {
     header: {
       fontWeight: 'bold',
       fontSize: '2.5rem',
-      color: '#7a9cb1', // Updated heading color
+      color: '#7a9cb1', 
     },
     blue: {
-      color: '#3498db', // Brighter Blue for a fresh look
+      color: '#3498db', 
     },
     yellow: {
-      color: '#f9ba32', // Yellow
+      color: '#f9ba32', 
     },
     emoji: {
-      fontSize: '150px', // Adjust emoji size
+      fontSize: '150px', 
     },
   };
 

@@ -94,7 +94,7 @@ const Projects = () => {
                   <div className="topic-container">
                     {repo.topics.map((topic, index) => (
                       <span key={topic} className="topic-item">
-                        {topic}{index < repo.topics.length - 1 && ', '}
+                        {topic}{index < repo.topics.length - 1 && ' '}
                       </span>
                     ))}
                   </div>

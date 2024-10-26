@@ -15,9 +15,29 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-1px); /* Adjust distance */
+    transform: translateY(-1px); 
   }
 }
+
+/* Stylish name effect */
+.name-container .name {
+  font-size: 2.5rem !important; 
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.35);
+  transition: text-shadow 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+}
+
+.name-container .name:hover {
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+
 
 /* Skills */
 .text-white {
@@ -27,7 +47,7 @@
 
 .header-title {
   font-size: 1.8rem;
-  color: #fff; /* White text color */
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
@@ -46,8 +66,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #212121; /* Light mode background color */
-  color: #333; /* Light mode text color */
+  background-color: #212121; 
+  color: #333; 
 }
 
 /* skillset */
@@ -101,16 +121,16 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #1f2d38; /* Soft background for the container */
+  background-color: #1f2d38; 
   border-radius: 12px;
-  margin-bottom: 100px; /* Increased margin to separate content from footer */
+  margin-bottom: 100px; 
 }
 
 /* Title Styling */
 h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: #2c3e50; /* Darker shade for title */
+  color: #2c3e50; 
   font-weight: 400;
   letter-spacing: 0.5px;
   margin-bottom: 60px;
@@ -119,23 +139,23 @@ h1 {
 
 /* Grid Layout */
 .projects-grid {
-  display: block; /* Display projects in a single column */
+  display: block; 
   gap: 25px;
 }
 
 /* Card Styling */
 .project-card {
-  background-color: #263644; /* Soft white for the card background */
+  background-color: #263644; 
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  margin-bottom: 25px; /* Space between cards */
+  margin-bottom: 25px; 
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* Subtle lift effect */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Title Styling */
@@ -150,7 +170,7 @@ h1 {
 }
 
 .project-title i {
-  color: #2ecc71; /* GitHub icon color */
+  color: #2ecc71; 
   margin-right: 8px;
 }
 
@@ -165,18 +185,18 @@ h1 {
   line-height: 1.6;
   padding-bottom: 12px;
   border-bottom: 1px solid #3a4b5a;
-  margin-bottom: 12px; /* Added space below description */
+  margin-bottom: 12px; 
 }
 
 /* Topics Container Styling */
 .project-topics {
   font-size: 1rem;
   color: #a8c0d1;
-  margin-top: 16px; /* Increased space between description and topics */
+  margin-top: 16px;
   padding: 10px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjusted gap between topics */
+  gap: 10px; 
 }
 
 .topic-item {
@@ -188,25 +208,37 @@ h1 {
   border-radius: 12px;
   font-size: 0.9rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-right: 8px; /* Space between individual topic items */
+  margin-right: 8px; 
 }
 
 .topic-item:hover {
   background-color: #2ecc71;
   color: #ffffff;
-  transform: translateY(-2px); /* Subtle lift */
+  transform: translateY(-2px); 
 }
 
-/* Language Item Styling */
+.project-language {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #a8c0d1;
+}
+
+.language-container {
+  display: flex; 
+  gap: 8px; 
+  margin-left: 8px; 
+}
+
 .language-item {
   display: inline-block;
   color: #e0e0e0;
   font-size: 0.95rem;
-  margin-right: 12px;
   padding: 4px 8px;
   background-color: #2c3e50;
   border-radius: 8px;
-  margin-bottom: 8px; /* Added space between language items */
+  font-weight: bold;
+  margin-bottom: 0; 
 }
 
 .language-name {
@@ -220,10 +252,7 @@ h1 {
 
 
 
-
-
 /* nav */
-/* Container and Name Styling */
 .container.navigation {
   padding: 10px;
   border-radius: 8px;
@@ -232,7 +261,7 @@ h1 {
 .name-container .name {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #C1CFC0; /* Soft light text for readability */
+  color: #C1CFC0; 
   padding-bottom: 5px;
 }
 
@@ -242,7 +271,7 @@ h1 {
 }
 
 .nav-pills .nav-link {
-  color: #C1CFC0; /* Text color */
+  color: #C1CFC0; 
   font-weight: 500;
   padding: 4px 6px;
   border-radius: 4px;
@@ -254,7 +283,7 @@ h1 {
 .nav-pills .nav-link .nav-icon {
   margin-right: 6px;
   font-size: 1.2rem;
-  color: #FFB400; /* Highlight color for icons */
+  color: #FFB400; 
 }
 
 /* Hover & Active States */
@@ -266,7 +295,7 @@ h1 {
 
 .nav-pills .nav-link.active {
   background-color: #FFB400;
-  color: #263644; /* Darker color for contrast on active state 2ecc71 FFB400*/
+  color: #263644; 
   font-weight: bold;
 }
 
@@ -277,6 +306,6 @@ h1 {
 }
 
 hr {
-  border-top: 1px solid #C1CFC0; /* Line divider */
+  border-top: 1px solid #C1CFC0; 
   margin-top: 15px;
 }
