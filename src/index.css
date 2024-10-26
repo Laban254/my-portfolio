@@ -2,7 +2,7 @@
 
 
 body.dark-mode {
-  background-color: #040D12; /* Dark mode background color */
+  background-color: #395144; /* Dark mode background color */
   color: #ffffff; /* Dark mode text color */
 }
 
@@ -33,7 +33,7 @@ code {
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #2C3333; /* Adjusted background color */
+  background-color: #3C6255; /* Adjusted background color */
   color: #ffffff; /* Adjusted text color */
   min-height: 100vh;
 }

@@ -25,6 +25,21 @@
 }
 
 
+.header-title {
+  font-size: 1.8rem;
+  color: #fff; /* White text color */
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+}
+
+.skills-header {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
 
 .footer {
   padding: 1rem;
@@ -87,6 +102,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #61876E; /* Soft background for the container  2C3639*/
   border-radius: 12px;
 }
 
@@ -109,7 +125,8 @@ h1 {
 
 /* Card Styling */
 .project-card {
-  background-color: #ffffff; /* Soft white for the card background */
+  background-color: #A6BB8D; /* Soft white for the card background   3F4E4F*/ 
+
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -236,7 +253,7 @@ h1 {
 .nav-link {
   display: flex; /* Flex display for icon and text */
   align-items: center; /* Center icon and text vertically */
-  color: #007bff; /* Primary link color */
+  color: #dce2e9; /* Primary link color */
   text-decoration: none; /* Remove underline */
   padding: 10px 15px; /* Padding for clickable area */
   border-radius: 5px; /* Rounded button */
@@ -244,12 +261,12 @@ h1 {
 }
 
 .nav-link:hover {
-  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  background-color: #EAE7B1; /* Light blue background on hover */
   color: #0056b3; /* Darker color on hover */
 }
 
 .nav-link.active {
-  background-color: #007bff; /* Active link background */
+  background-color: #EAE7B1; /* Active link background */
   color: white; /* Active link text color */
 }
 

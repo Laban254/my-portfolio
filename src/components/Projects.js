@@ -8,13 +8,14 @@ const Projects = () => {
     "Event-management-API", "StudyHub", "postgres_db_tool", "customer-management-api",
     "ExpressJs-RESTFUL--API_demo", "simple-CI-system", "WebScrapify", "django-rabbitmq-celery-smtp",
     "WeatherSnap", "user-management-automation-script",
-    "TicketingSystem", "ImageGen-OpenAI", "FileEncryptAndDecrypt"
+    "TicketingSystem", "ImageGen-OpenAI", "FileEncryptAndDecrypt", "my-portfolio", "ecommerce-platform-backend ",
+    "event-driven-order-processing ", "social-connect-api ", "grpc-user-payment-services ", "task-manager-api", "FastAPI-Kubernetes"
   ];
 
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch("https://api.github.com/users/Laban254/repos?per_page=100");
+        const response = await fetch("https://api.github.com/users/Laban25/repos?per_page=100");
         const data = await response.json();
 
         const filteredRepos = data.filter(repo =>
@@ -55,7 +56,10 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h1>My Projects</h1>
+      <h1 class="header-title">
+        <i class="fas fa-folder-open" ></i>
+        My Projects
+      </h1>
       <div className="projects-grid">
         {repos.map((repo) => (
           <div key={repo.id} className="project-card">
