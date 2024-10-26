@@ -8,8 +8,8 @@ const Projects = () => {
     "Event-management-API", "StudyHub", "postgres_db_tool", "customer-management-api",
     "ExpressJs-RESTFUL--API_demo", "simple-CI-system", "WebScrapify", "django-rabbitmq-celery-smtp",
     "WeatherSnap", "user-management-automation-script",
-    "TicketingSystem", "ImageGen-OpenAI", "FileEncryptAndDecrypt", "my-portfolio", "ecommerce-platform-backend ",
-    "event-driven-order-processing ", "social-connect-api ", "grpc-user-payment-services ", "task-manager-api", "FastAPI-Kubernetes"
+    "TicketingSystem", "ImageGen-OpenAI", "FileEncryptAndDecrypt", "my-portfolio", "ecommerce-platform-backend",
+    "event-driven-order-processing", "social-connect-api", "grpc-user-payment-services", "task-manager-api", "FastAPI-Kubernetes"
   ];
 
   useEffect(() => {
@@ -63,11 +63,12 @@ const Projects = () => {
       <div className="projects-grid">
         {repos.map((repo) => (
           <div key={repo.id} className="project-card">
-            <h2 className="project-title">
+            <h3 className="project-title">
               <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github" style={{ marginRight: '8px' }}></i>
                 {repo.name}
               </a>
-            </h2>
+            </h3>
             <p className="project-description">
               {repo.description || "No description available."}
             </p>
