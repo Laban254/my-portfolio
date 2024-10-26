@@ -15,7 +15,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch("https://api.github.com/users/Laban25/repos?per_page=100");
+        const response = await fetch("https://api.github.com/users/Laban254/repos?per_page=100");
         const data = await response.json();
 
         const filteredRepos = data.filter(repo =>
