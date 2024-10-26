@@ -82,83 +82,136 @@
 
 
 
-/* projects */
-/* projects.css */
+/* Container Styling */
 .projects-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 8px; /* Rounded corners for container */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around container */
-  margin-bottom: 80px;
+  background-color: #f9f9f9; /* Soft background for the container */
+  border-radius: 12px;
 }
 
+/* Title Styling */
 h1 {
   text-align: center;
-  font-size: 2.5rem; /* Larger font size */
-  color: #2c3e50; /* Dark blue-grey color */
-  margin-bottom: 40px; /* Space below heading */
-  font-weight: 700; /* Bold font */
-  letter-spacing: 1px; /* Increase spacing between letters */
+  font-size: 2.4rem;
+  color: #2c3e50; /* Darker shade for title */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
 }
 
+/* Grid Layout */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted min width */
-  gap: 20px; /* Increase gap for better spacing */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
 }
 
+/* Card Styling */
 .project-card {
-  background-color:#FEFEFA; /* White background for cards 91a798  */
-  border-radius: 10px; /* Rounded corners for cards */
-  padding: 20px; /* Padding for card content */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for cards */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition effects */
+  background-color: #ffffff; /* Soft white for the card background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out footer */
-  overflow: hidden; /* Hide any overflow content */
+  min-height: 350px; /* Minimum height for uniformity */
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* Subtle lift on hover */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
+/* Title Link */
 .project-title a {
-  font-size: 1.45rem; /* Font size for project title */
-  color: #2A52BE; /* Link color */
-  text-decoration: none; /* No underline */
+  font-size: 1.35rem;
+  color: #2980b9; /* Primary color for title */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .project-title a:hover {
-  text-decoration: underline; /* Underline on hover */
+  color: #3498db; /* Lighter shade on hover */
+  text-decoration: underline;
 }
 
+/* Description Section */
 .project-description {
-  font-size: 1rem; /* Standard font size */
-  color: #444; /* Darker text color */
-  margin: 10px 0; /* Space around description */
-  overflow-wrap: break-word; /* Prevent overflow */
-  flex-grow: 1; /* Allow description to grow */
+  font-size: 1rem;
+  color: #7f8c8d; /* Muted gray for description */
+  line-height: 1.5;
+  margin-top: 10px;
+  overflow-y: auto; /* Enable vertical scroll */
+  max-height: 100px;
+  padding-right: 5px; /* Padding for scrollbar space */
+  border-top: 1px solid #ecf0f1; /* Light border for separation */
+  padding-top: 10px;
+  flex-grow: 1; /* Allow description to grow and fill space */
 }
 
-.project-footer {
-  font-size: 0.9rem; /* Slightly smaller font for footer */
-  color: #555; /* Gray color for footer */
-  margin-top: 10px; /* Margin for spacing */
+/* Language Section */
+.project-language {
+  font-size: 0.95rem;
+  color: #34495e; /* Slightly darker gray */
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ecf0f1;
 }
 
-.project-footer strong {
-  color: #333; /* Darker color for strong text */
+/* Language Container */
+.language-container {
+  display: flex; /* Use flex for inline layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 5px; /* Space between items */
 }
 
-.project-language,
+/* Language Item */
+.language-item {
+  display: flex; /* Flex for horizontal alignment */
+}
+
+/* Language Name Styling */
+.language-name {
+  font-weight: 600; /* Bold for better emphasis */
+  color: #2980b9; /* Primary color for the language name */
+}
+
+/* Language Percentage Styling */
+.language-percentage {
+  color: #7f8c8d; /* Muted gray for percentage */
+  font-style: italic; /* Italic for differentiation */
+}
+
+/* Topics Section */
 .project-topics {
-  margin-top: 4px; /* Margin for footer items */
+  font-size: 0.95rem;
+  color: #34495e; /* Slightly darker gray */
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ecf0f1;
 }
 
+/* Topic Container */
+.topic-container {
+  display: flex; /* Flex for inline layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 5px; /* Space between items */
+}
 
+/* Topic Item */
+.topic-item {
+  font-weight: 600; /* Bold for better emphasis */
+  color: #2980b9; /* Primary color for topics */
+}
+
+.project-topics strong {
+  font-weight: 600;
+  color: #34495e; /* Slightly darker gray */
+}
 
 
 

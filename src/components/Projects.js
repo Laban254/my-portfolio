@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
+  const [languages, setLanguages] = useState({});
 
-  // Specify the repository names you want to display
   const specificRepos = [
     "Event-management-API", "StudyHub", "postgres_db_tool", "customer-management-api",
     "ExpressJs-RESTFUL--API_demo", "simple-CI-system", "WebScrapify", "django-rabbitmq-celery-smtp",
@@ -17,26 +17,45 @@ const Projects = () => {
         const response = await fetch("https://api.github.com/users/Laban254/repos?per_page=100");
         const data = await response.json();
 
-        // Filter the repositories to only include the specified ones by name
         const filteredRepos = data.filter(repo =>
           specificRepos.includes(repo.name)
         );
 
-        // Sort by last updated time (descending order)
         const sortedRepos = filteredRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
         setRepos(sortedRepos);
+
+        // Fetch languages for each repo
+        await Promise.all(
+          sortedRepos.map(async (repo) => {
+            const langResponse = await fetch(repo.languages_url);
+            const langData = await langResponse.json();
+            setLanguages((prevLanguages) => ({
+              ...prevLanguages,
+              [repo.id]: langData,
+            }));
+          })
+        );
       } catch (error) {
-        console.error("Error fetching repositories:", error);
+        console.error("Error fetching repositories or languages:", error);
       }
     };
 
     fetchRepos();
-  }, [specificRepos]); // Add specificRepos as a dependency
+  }, []);
+
+  // Helper function to calculate percentages
+  const calculateLanguagePercentages = (languageData) => {
+    const totalBytes = Object.values(languageData).reduce((acc, bytes) => acc + bytes, 0);
+    return Object.entries(languageData).map(([language, bytes]) => ({
+      language,
+      percentage: ((bytes / totalBytes) * 100).toFixed(1),
+    }));
+  };
 
   return (
     <div className="projects-container">
-      <h1>Projects</h1>
+      <h1>My Projects</h1>
       <div className="projects-grid">
         {repos.map((repo) => (
           <div key={repo.id} className="project-card">
@@ -49,14 +68,35 @@ const Projects = () => {
               {repo.description || "No description available."}
             </p>
             <div className="project-footer">
-              <p className="project-language">
-                <strong>Language:</strong> {repo.language || "N/A"}
-              </p>
-              <p className="project-topics">
-                <strong>Topics:</strong> {repo.topics && repo.topics.length > 0 ? (
-                  <span>{repo.topics.join(', ')}</span>
-                ) : "No topics"}
-              </p>
+              <div className="project-language">
+                <strong>Languages:</strong>
+                {languages[repo.id] ? (
+                  <div className="language-container">
+                    {calculateLanguagePercentages(languages[repo.id]).map(({ language, percentage }) => (
+                      <span key={language} className="language-item">
+                        <span className="language-name">{language}</span>: 
+                        <span className="language-percentage"> {percentage}%</span>
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  "Loading languages..."
+                )}
+              </div>
+              <div className="project-topics">
+                <strong>Topics:</strong>
+                {repo.topics?.length ? (
+                  <div className="topic-container">
+                    {repo.topics.map((topic, index) => (
+                      <span key={topic} className="topic-item">
+                        {topic}{index < repo.topics.length - 1 && ', '}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  "No topics"
+                )}
+              </div>
             </div>
           </div>
         ))}
