@@ -6,9 +6,9 @@ const Skillsets = () => {
   return (
     <section id="skills" className="d-flex align-items-center" style={{ marginBottom: '40px' }}>
       <div className="skillsets-container">
-      <h1 className="skills-header">
-      <i className="fas fa-tools"></i> Skills
-    </h1>
+        <h1 className="skills-header">
+          <i className="fas fa-tools"></i> Skills
+        </h1>
         <div className="row text-center">
           {/* Languages */}
           <div className="col-md-2 mb-4">
@@ -23,7 +23,6 @@ const Skillsets = () => {
             <i className="fab fa-js-square fa-3x" style={{ color: '#F7DF1E' }}></i>
             <p>JavaScript</p>
           </div>
-          
 
           {/* Frameworks */}
           <div className="col-md-2 mb-4">
@@ -139,6 +138,16 @@ const Skillsets = () => {
           <div className="col-md-2 mb-4">
             <i className="fas fa-comments fa-3x" style={{ color: '#00C853' }}></i>
             <p>Swagger/OpenAI</p>
+          </div>
+          
+          {/* Add RabbitMQ and Kafka */}
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-rabbit fa-3x" style={{ color: '#4A8C2A' }}></i> {/* Icon for RabbitMQ */}
+            <p>RabbitMQ</p>
+          </div>
+          <div className="col-md-2 mb-4">
+            <i className="fas fa-stream fa-3x" style={{ color: '#E87E04' }}></i> {/* Icon for Kafka */}
+            <p>Kafka</p>
           </div>
         </div>
       </div>
