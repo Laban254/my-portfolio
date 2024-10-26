@@ -7,7 +7,7 @@ const AboutMe = () => {
     header: {
       fontWeight: 'bold',
       fontSize: '2.5rem',
-      color: '#34495e', // Updated heading color
+      color: '#7a9cb1', // Updated heading color
     },
     blue: {
       color: '#3498db', // Brighter Blue for a fresh look
